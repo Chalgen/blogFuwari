@@ -1,0 +1,42 @@
+---
+import Markdown from "@components/misc/Markdown.astro";
+import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { friends } from "../data/friends";
+---
+
+<MainGridLayout title="友情链接" description="神秘の妙妙芜♂">
+    <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+        <div class="card-base z-10 px-9 py-6 relative w-full">
+            <Markdown class="mt-2">
+                <h1>友情链接</h1>
+                <p>神秘の妙妙芜♂</p>
+            </Markdown>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6" aria-label="友情链接">
+                {friends.map((friend) => (
+                    <li class="min-w-0">
+                        <a
+                            href={friend.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="group flex h-full items-center gap-4 rounded-[var(--radius-large)] p-4 transition bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] active:bg-[var(--btn-regular-bg-active)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)]"
+                        >
+                            <img
+                                src={friend.avatar}
+                                alt={`${friend.name}的头像`}
+                                width="64"
+                                height="64"
+                                loading="lazy"
+                                decoding="async"
+                                class="h-16 w-16 shrink-0 rounded-full object-cover"
+                            />
+                            <div class="min-w-0">
+                                <h2 class="text-90 font-bold break-words group-hover:text-[var(--primary)]">{friend.name}</h2>
+                                <p class="text-75 text-sm mt-1 break-words">{friend.description}</p>
+                            </div>
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </div>
+</MainGridLayout>

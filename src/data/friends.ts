@@ -1,0 +1,98 @@
+export const friends = [
+	{
+		name: "eliadorias",
+		url: "https://eliadoarias.top/",
+		avatar: "/images/wxz.jpg",
+		description: "wxz",
+	},
+	{
+		name: "endercrysta2",
+		url: "https://www.endercrysta2.xyz/",
+		avatar: "/images/bwz.jpg",
+		description: "bwz",
+	},
+	{
+		name: "折乙",
+		url: "https://zheyi.in/",
+		avatar: "/images/zheyi.jpg",
+		description: "\\折乙/\\折乙/\\折乙/",
+	},
+	{
+		name: "白糖洒一地",
+		url: "https://blog.sugarmgp.icu/",
+		avatar: "/images/baitang.jpg",
+		description: "\\白糖/\\白糖/\\白糖/",
+	},
+	{
+		name: "ZestfulYk",
+		url: "https://zestfulyk.github.io/ZestfulYK-blog/",
+		avatar: "/images/zyk.jpg",
+		description: "zyk",
+	},
+	{
+		name: "Chtholly-Daisuki",
+		url: "https://chtholly-daisuki.github.io/",
+		avatar: "/images/lhr.jpg",
+		description: "lhr",
+	},
+	{
+		name: "星期五的小绵羊",
+		url: "https://blog.fridayssheep.top/",
+		avatar: "/images/yzj.jpg",
+		description: "yzj",
+	},
+	{
+		name: "顺天一方",
+		url: "https://shuntianyifang.github.io/shuntian-blog/",
+		avatar: "/images/hhs.jpg",
+		description: "hhs",
+	},
+	{
+		name: "H2SO4-blog",
+		url: "https://h2so4.site/",
+		avatar: "/images/ckl.jpg",
+		description: "ckl",
+	},
+	{
+		name: "scienct's blog",
+		url: "https://blog.scienct.top/",
+		avatar: "/images/gwt.jpg",
+		description: "gwt",
+	},
+	{
+		name: "v185v",
+		url: "https://blog.v185v.xyz",
+		avatar: "/images/cys.jpg",
+		description: "cys",
+	},
+	{
+		name: "节木",
+		url: "https://scotianova.top",
+		avatar: "/images/sj.jpg",
+		description: "sj",
+	},
+	{
+		name: "Stargazer's LucidDream",
+		url: "https://blog.stargazer-luciddream.top/",
+		avatar: "/images/psh.jpg",
+		description: "psh",
+	},
+	{
+		name: "烷氮了.blog",
+		url: "https://ysss-ee.xyz",
+		avatar: "/images/ksh.jpg",
+		description: "ksh",
+	},
+	{
+		name: "陈思楠",
+		url: "https://www.fenghecsn.top/",
+		avatar: "/images/csn.jpg",
+		description: "csn",
+	},
+	{
+		name: "蛋✌",
+		url: "https://dumbdaidai.github.io/",
+		avatar: "/images/dan.jpg",
+		description: "不可战胜之人\\0/",
+	},
+];
