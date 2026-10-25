@@ -1,7 +1,7 @@
 ---
 title: '这个博客怎么用：从 Git 到发布第一篇文章'
 published: 2026-10-25
-draft: true
+draft: false
 description: '针对当前 Fuwari 项目的零基础使用手册：认识目录、使用 PowerShell 和 Git、写 Markdown、管理图片、预览构建，并安全走向发布。'
 image: ''
 tags: ['Fuwari', 'Git', 'Markdown', '博客维护']
