@@ -1,6 +1,7 @@
 ---
 import Markdown from "@components/misc/Markdown.astro";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
+import { url } from "@utils/url-utils";
 import { friends } from "../data/friends";
 ---
 
@@ -21,7 +22,7 @@ import { friends } from "../data/friends";
                             class="group flex h-full items-center gap-4 rounded-[var(--radius-large)] p-4 transition bg-[var(--btn-regular-bg)] hover:bg-[var(--btn-regular-bg-hover)] active:bg-[var(--btn-regular-bg-active)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)]"
                         >
                             <img
-                                src={friend.avatar}
+                                src={friend.avatar.startsWith("/") && !friend.avatar.startsWith("//") ? url(friend.avatar) : friend.avatar}
                                 alt={`${friend.name}的头像`}
                                 width="64"
                                 height="64"

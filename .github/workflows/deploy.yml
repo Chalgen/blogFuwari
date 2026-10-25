@@ -1,0 +1,45 @@
+name: Deploy preview to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.repository == 'Chalgen/blogFuwari' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    env:
+      ASTRO_TELEMETRY_DISABLED: '1'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+      - name: Install, build, and upload Pages artifact
+        uses: withastro/action@v6
+        with:
+          node-version: '22'
+          # Detect pnpm-lock.yaml and use pnpm@9.14.4 from package.json.
+          # Run the full build script so Pagefind is included.
+          build-cmd: pnpm run build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
