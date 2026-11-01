@@ -59,21 +59,14 @@ export const profileConfig: ProfileConfig = {
 	bio: "今天依旧安好",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
-		},
-		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			name: "网易云音乐歌单",
+			icon: "fa6-solid:music",
+			url: "https://music.163.com/m/playlist?id=17839163489&creatorId=17460901024",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			url: "https://github.com/Chalgen",
 		},
 	],
 };
